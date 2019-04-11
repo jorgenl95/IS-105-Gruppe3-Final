@@ -18,10 +18,10 @@ func main() {
 		log.Fatal(err)
 	}
 	fileSize := file.Size()
-	fileSizeB := fileSize / 8
-	fileSizeKiB := fileSizeB / 1024
-	fileSizeMiB := fileSizeKiB / 1024
-	fileSizeGiB := fileSizeMiB / 1024
+	fileSizeB := fileSize
+	fileSizeKB := fileSizeB / 1024
+	fileSizeMB := float32(fileSizeKB / 1024)
+	fileSizeGB := float32(fileSizeMB / 1024)
 
 	fileMode := file.Mode()
 	isDir := fileMode.IsDir()
@@ -42,7 +42,7 @@ func main() {
 	isSymbolicLink := fileMode&os.ModeSymlink != 0
 
 	fmt.Printf("Information about %s:\n", absPath)
-	fmt.Printf("Size: %d bytes, %d KiB, %d MiB, %d GiB\n", fileSizeB, fileSizeKiB, fileSizeMiB, fileSizeGiB)
+	fmt.Printf("Size: %d bytes, %d KB, %.2f MB, %f GB\n", fileSizeB, fileSizeKB, fileSizeMB, fileSizeGB)
 	fmt.Println("IS Dir ", isDir)
 	fmt.Println("Is Reg ", isReg)
 	fmt.Println("Unix permission bits: ", permissionBits)
