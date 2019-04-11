@@ -1,7 +1,11 @@
 package main
 
-import "github.com/jorgenl95/is105-ica03/lineshift"
+import (
+	"os"
+	"github.com/jorgenl95/IS-105-Gruppe3-Final/is105-ica03-final/lineshift"
+)
 
 func main() {
-	lineshift.SearchForLineshift("files/text1.txt")
+	filename := os.Args[1]
+	lineshift.SearchForLineshift(filename)
 }
