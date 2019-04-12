@@ -1,6 +1,6 @@
 package main
 
-import iso "github.com/TeamSolutionsUiA/ica02/is105-ica02-master/iso/isopack"
+import iso "./isopack"
 
 func main() {
 
