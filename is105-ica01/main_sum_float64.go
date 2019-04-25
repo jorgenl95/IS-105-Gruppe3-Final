@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"github.com/jorgenl95/is105-ica01/sum"
+	"./sum"
 )
 
 func main() {
@@ -19,7 +19,8 @@ func main() {
 		fmt.Println("Error occured")
 	}
 
-	var tempVar = sum.SumInt32(int32(argsNumber), int32(argsNumber2))
+
+	tempVar := sum.SumInt8(int8(argsNumber), int8(argsNumber2))
 
 	fmt.Println(tempVar)
 
