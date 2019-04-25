@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	unicode "github.com/TeamSolutionsUiA/ica02/is105-ica02-master/unicode/uniPack"
+	unicode "./uniPack"
 )
 
 func main() {
