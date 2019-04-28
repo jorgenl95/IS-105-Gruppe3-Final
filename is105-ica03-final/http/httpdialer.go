@@ -39,15 +39,15 @@ func main () {
 	httpAddr2  := flag.String("http", "foo", "HTTP address")
 	flag.Parse()
 
-	resp, err := http.Get(*httpAddr2) //"http://localhost:5000"
+	conn, err := http.Get(*httpAddr2) //"http://localhost:5000"
 	if err != nil {
 		panic(err)
 	}
 
-	defer resp.Body.Close()
+	defer conn.Body.Close()
 
 	//Leser data fra server (JSON-struktur) og dekoder den.
-	body, _ := ioutil.ReadAll(resp.Body)
+	body, _ := ioutil.ReadAll(conn.Body)
 	if err := json.Unmarshal(body, &person1); err != nil {
 		panic(err)
 	}
