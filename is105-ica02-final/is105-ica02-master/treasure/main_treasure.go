@@ -1,7 +1,7 @@
 package main
 
 import (
-	treasure "github.com/TeamSolutionsUiA/ica02/is105-ica02-master/treasure/treasurepack"
+	treasure "./treasurepack"
 )
 
 func main() {
