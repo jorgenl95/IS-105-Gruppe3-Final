@@ -1,8 +1,10 @@
 // Testpakke for pakken ascii
 package ascii
 
-import "testing"
-import "fmt"
+import (
+	"testing"
+	"fmt"
+)
 
 // Testfunksjon for funksjonen GreetingsASCII.
 func TestGreetingsASCII(t *testing.T) {

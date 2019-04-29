@@ -6,7 +6,7 @@ import (
 
 func main() {
 
-	stringliteral := ascii.GetASCIIStringLitral()
+	stringliteral := ascii.GetASCIIStringLiteral()
 	ascii.IterateOverASCIIStringLiteral(stringliteral)
 	ascii.GreetingASCII()
 }

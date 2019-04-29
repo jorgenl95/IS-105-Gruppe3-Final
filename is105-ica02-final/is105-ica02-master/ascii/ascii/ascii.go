@@ -24,19 +24,19 @@ const ascii = "\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f"
 // 3F ? 111111
 // 40 @ 1000000
 // ...
-func GetASCIIStringLitral() string {
+func GetASCIIStringLiteral() string {
 	// Kode for Oppgave 1a
 
 	return ascii
 
 }
 
-func IterateOverASCIIStringLiteral(stringLitteral string) {
+func IterateOverASCIIStringLiteral(stringLiteral string) {
 
-	for i := 0; i < len(stringLitteral); i++ {
-		fmt.Printf("%X  ", stringLitteral[i])
-		fmt.Printf("%q  ", stringLitteral[i])
-		fmt.Printf("%b  \n", stringLitteral[i])
+	for i := 0; i < len(stringLiteral); i++ {
+		fmt.Printf("%X  ", stringLiteral[i])
+		fmt.Printf("%q  ", stringLiteral[i])
+		fmt.Printf("%b  \n", stringLiteral[i])
 	}
 }
 
@@ -51,7 +51,7 @@ func IterateOverASCIIStringLiteral(stringLitteral string) {
 // som inneholder kun ASCII tegn (ikke utvidet ASCII).
 // Gjelder oppgave 1c
 func GreetingASCII() string {
-	byteArray := []byte{'\x22', '\x68', '\x65', '\x6c', '\x6c', '\x6f', '\x20', '\x3a', '\x2d', '\x29', '\x22'}
+	byteArray := []byte{'\x22', '\x48', '\x65', '\x6c', '\x6c', '\x6f', '\x20', '\x3a', '\x2d', '\x29', '\x22'}
 	greetingString := ""
 	for i := 0; i < len(byteArray); i++ {
 		greetingString += fmt.Sprintf("%c", byteArray[i])
