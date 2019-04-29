@@ -4,7 +4,7 @@ import iso "./isopack"
 
 func main() {
 
-	stringliteral := iso.GetExtASCIIStringLitral()
+	stringliteral := iso.GetExtASCIIStringLiteral()
 	iso.IterateOverExtendedASCIIStringLiteral(stringliteral)
 	iso.GreetingExtendedASCII()
 
