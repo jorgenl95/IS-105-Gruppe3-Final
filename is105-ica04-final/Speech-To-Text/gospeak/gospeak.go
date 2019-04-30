@@ -1,6 +1,6 @@
 package gospeak
 
-import (speech "github.com/go-speak")
+import (speech "github.com/nicolaifsf/go-speak")
 //example
 
 
