@@ -15,9 +15,12 @@ func main() {
 	byteSlice2Subset := byteSlice2[0:30]
 	byteSlice3Subset := byteSlice3[0:30]
 
-	fmt.Printf("%c ", byteSlice1Subset)
+	fmt.Println("Contents of lang01.wl: ")
+	fmt.Printf("%c \n", byteSlice1Subset)
 
-	fmt.Printf("\n\n%c ", byteSlice2Subset)
+	fmt.Println("Contents of lang02.wl: ")
+	fmt.Printf("%c \n", byteSlice2Subset)
 
-	fmt.Printf("\n\n%c ", byteSlice3Subset)
+	fmt.Println("Contents of lang03.wl: ")
+	fmt.Printf("%c \n", byteSlice3Subset)
 }
