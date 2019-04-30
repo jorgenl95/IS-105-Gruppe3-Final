@@ -5,7 +5,7 @@ import (speech "github.com/nicolaifsf/go-speak")
 
 
 func main(){
-  speech.SetWitKey("RLD2DHGWIRNX72FHOZMRNBTGJBGOCEXK") //Wit API Key MUST be set before calling any other Wit.AI functions
+  speech.SetWitKey("RLD2DHGWIRNX72FHOZMRNBTGJBGOCEXK") //Wit API key fra sveggen
   speech.SendWitVoice("audio-file.wav")
   
 
