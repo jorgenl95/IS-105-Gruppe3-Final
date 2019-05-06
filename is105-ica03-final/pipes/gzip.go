@@ -21,5 +21,5 @@ func ReturnGZip(s string) string {
 		log.Fatal(err)
 	}
 
-	return fmt.Sprintln(buf)
+	return fmt.Sprintf("% X", buf)
 }
