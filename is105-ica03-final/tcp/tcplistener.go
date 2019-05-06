@@ -26,7 +26,7 @@ func handler(c net.Conn) {
 
 // Starter en tcp-server.
 func main() {
-	l, err := net.Listen("tcp", ":5000") // ":5000" må endres til din "ip:port". l = listen
+	l, err := net.Listen("tcp", "10.228.36.241:5000") // ":5000" må endres til din "ip:port". l = listen
 	if err != nil {
 		panic(err)
 	}
